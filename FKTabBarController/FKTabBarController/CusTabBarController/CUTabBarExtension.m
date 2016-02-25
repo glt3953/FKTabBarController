@@ -108,13 +108,14 @@ static CGFloat const btnH = 49;
         
         // 设置尺寸
         CGRect frame = _centerButton.frame;
-        frame.size = _centerButton.currentBackgroundImage.size;
+        frame.size = CGSizeMake(100, 100);
+//        frame.size = _centerButton.currentBackgroundImage.size;
         _centerButton.frame = frame;
         
         CGFloat width = self.frame.size.width;
         CGFloat height = self.frame.size.height;
         
-        _centerButton.center = CGPointMake(width * 0.5, height * 0.5);
+        _centerButton.center = CGPointMake(width * 0.5, 0);
         
         NSInteger index = 0;
         for (UIControl *button in self.subviews) {
